@@ -78,8 +78,8 @@ class HomeIndex extends React.Component {
     }
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
-        const siteDescription = "Site description"
+        const siteTitle = "Ghassen Rjab"
+        const siteDescription = "This is the protfolio website of Ghassen Rjab, a Chatbot and AI Developer. He is a Web Developer too"
 
         return (
             <Layout>
