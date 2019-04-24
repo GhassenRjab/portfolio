@@ -108,6 +108,26 @@ class HomeIndex extends React.Component {
                         }))} />
                     </section>
 
+                    <section id="three">
+                        <h2>Get In Touch</h2>
+                        <p>Want to hire me or get in touch with me? Send me a message.</p>
+                        <div className="row">
+                            <div className="12u">
+                                <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                                    <input type="hidden" name="bot-field" />
+                                    <div className="row uniform 50%">
+                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                                        <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                                    </div>
+                                    <ul className="actions">
+                                        <li><input type="submit" value="Send Message" /></li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
 
             </Layout>
