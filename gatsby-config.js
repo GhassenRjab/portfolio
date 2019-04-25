@@ -3,6 +3,7 @@ module.exports = {
     title: 'Gatsby Starter - Strata by HTML5 UP',
     author: 'Hunter Chang',
     description: 'A Gatsby.js Starter based on Strata by HTML5 UP',
+    siteUrl: 'https://www.ghassenrjab.tn',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -26,5 +27,6 @@ module.exports = {
         lang: 'en',
       },
     },
+    'gatsby-plugin-sitemap',
   ],
 }
