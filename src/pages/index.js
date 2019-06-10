@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
-// import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
 import thumb01 from '../assets/images/thumbs/01.jpg'
@@ -79,7 +78,7 @@ class HomeIndex extends React.Component {
 
     render() {
         const siteTitle = "Ghassen Rjab"
-        const siteDescription = "This is the protfolio website of Ghassen Rjab, a Chatbot and AI Developer. He is a Web Developer too"
+        const siteDescription = "This is the protfolio website of Ghassen Rjab, a Fullstack JavaScript Developer from Sfax, Tunisia. Based in Paris, France now."
 
         return (
             <Layout>
@@ -94,7 +93,7 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>Chabot and AI Developer</h2>
                         </header>
-                        <p>Chabot and AI Developer with a rich experience in Web Development. Creative, multi-skilled and self-contained who loves facing challenges and solving complex problems with his keyboard.</p>
+                        <p>Fullstack JavaScript Developer with a rich experience in Chatbot and AI development. Creative, multi-skilled and self-contained, who loves facing challenges and solving complex problems with his keyboard.</p>
                     </section>
 
                     <section id="two">
