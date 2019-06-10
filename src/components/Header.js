@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-import Footer from './Footer'
-import avatar from '../assets/images/avatar.jpg'
+import Footer from "./Footer";
+import avatar from "../assets/images/avatar.jpg";
 
 class Header extends React.Component {
   render() {
@@ -18,8 +18,8 @@ class Header extends React.Component {
         </div>
         <Footer />
       </header>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;
