@@ -27,6 +27,7 @@ module.exports = {
         lang: "en"
       }
     },
-    "gatsby-plugin-sitemap"
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-robots-txt"
   ]
 };
