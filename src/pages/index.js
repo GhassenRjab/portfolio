@@ -71,7 +71,8 @@ const DEFAULT_IMAGES = [
 
 class HomeIndex extends React.Component {
   render() {
-    const siteTitle = "Ghassen Rjab";
+    const siteTitle =
+      "Ghassen Rjab - Fullstack JavaScript Developer and problem solver";
     const siteDescription =
       "This is the protfolio website of Ghassen Rjab, a Fullstack JavaScript Developer from Sfax, Tunisia. Based in Paris, France now.";
 
