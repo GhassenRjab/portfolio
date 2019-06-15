@@ -85,7 +85,7 @@ class HomeIndex extends React.Component {
         <div id="main">
           <section id="one">
             <header className="major">
-              <h2>Chabot and AI Developer</h2>
+              <h2>Fullstack JavaScript Developer</h2>
             </header>
             <p>
               Fullstack JavaScript Developer with a rich experience in Chatbot
