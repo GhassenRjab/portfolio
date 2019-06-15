@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.1.0",
+  "name": "ghassen-rjab-portfolio",
+  "description": "Ghassen Rjab's portfolio",
+  "version": "1.2.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^2.9.4",
