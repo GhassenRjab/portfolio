@@ -1,4 +1,5 @@
 import React from "react";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 class Footer extends React.Component {
   render() {
@@ -7,34 +8,34 @@ class Footer extends React.Component {
         <div className="inner">
           <ul className="icons">
             <li>
-              <a
+              <OutboundLink
                 href="https://twitter.com/GhassenRjab"
                 className="icon fa-twitter"
                 title="Twitter profile"
                 aria-label="Twitter profile"
               >
                 <span className="label">Twitter</span>
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a
+              <OutboundLink
                 href="https://github.com/GhassenRjab"
                 className="icon fa-github"
                 title="GitHub profile"
                 aria-label="GitHub profile"
               >
                 <span className="label">Github</span>
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a
+              <OutboundLink
                 href="https://www.linkedin.com/in/ghassenrjab/"
                 className="icon fa-linkedin"
                 title="LinkedIn profile"
                 aria-label="LinkedIn profile"
               >
                 <span className="label">LinkedIn</span>
-              </a>
+              </OutboundLink>
             </li>
             <li>
               <a
@@ -51,9 +52,9 @@ class Footer extends React.Component {
             <li>&copy; Gatsby Starter Strata</li>
             <li>
               Design:{" "}
-              <a href="http://html5up.net" title="HTML5 UP">
+              <OutboundLink href="http://html5up.net" title="HTML5 UP">
                 HTML5 UP
-              </a>
+              </OutboundLink>
             </li>
           </ul>
         </div>
