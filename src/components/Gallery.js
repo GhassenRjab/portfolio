@@ -19,9 +19,7 @@ class Gallery extends Component {
       selectedIndex
     }));
   }
-  renderGallery() {
-    const { images } = this.props;
-
+  renderGallery(images) {
     if (!images) return;
 
     const gallery = images.map((obj, i) => {
@@ -53,7 +51,7 @@ class Gallery extends Component {
 
     return (
       <div>
-        {this.renderGallery()}
+        {this.renderGallery(images)}
         <ModalGateway>
           {lightboxIsOpen && (
             <Modal onClose={this.toggleLightbox}>
