@@ -1,25 +1,17 @@
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import React, { Component } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
-class Gallery extends Component {
-  constructor() {
-    super();
+const Gallery = ({ images }) => {
+  const [lightboxIsOpen, setLightboxIsOpen] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
-    this.state = {
-      lightboxIsOpen: false,
-      selectedIndex: 0
-    };
+  const toggleLightbox = (selectedIndex) => {
+    setLightboxIsOpen(!lightboxIsOpen);
+    setSelectedIndex(selectedIndex);
+  };
 
-    this.toggleLightbox = this.toggleLightbox.bind(this);
-  }
-  toggleLightbox(selectedIndex) {
-    this.setState(state => ({
-      lightboxIsOpen: !state.lightboxIsOpen,
-      selectedIndex
-    }));
-  }
-  renderGallery(images) {
+  const renderGallery = (images) => {
     if (!images) return;
 
     const gallery = images.map((obj, i) => {
@@ -29,9 +21,9 @@ class Gallery extends Component {
             className="image fit thumb"
             href={obj.source}
             title={obj.caption}
-            onClick={e => {
+            onClick={(e) => {
               e.preventDefault();
-              this.toggleLightbox(i);
+              toggleLightbox(i);
             }}
           >
             <img src={obj.thumbnail} alt={obj.caption} />
@@ -44,29 +36,25 @@ class Gallery extends Component {
     });
 
     return <div className="row">{gallery}</div>;
-  }
-  render() {
-    const { images } = this.props;
-    const { selectedIndex, lightboxIsOpen } = this.state;
+  };
 
-    return (
-      <div>
-        {this.renderGallery(images)}
-        <ModalGateway>
-          {lightboxIsOpen && (
-            <Modal onClose={this.toggleLightbox}>
-              <Carousel currentIndex={selectedIndex} views={images} />
-            </Modal>
-          )}
-        </ModalGateway>
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      {renderGallery(images)}
+      <ModalGateway>
+        {lightboxIsOpen && (
+          <Modal onClose={toggleLightbox}>
+            <Carousel currentIndex={selectedIndex} views={images} />
+          </Modal>
+        )}
+      </ModalGateway>
+    </div>
+  );
+};
 
 Gallery.displayName = "Gallery";
 Gallery.propTypes = {
-  images: PropTypes.array
+  images: PropTypes.array,
 };
 
 export default Gallery;
