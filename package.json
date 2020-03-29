@@ -25,10 +25,14 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop"
+    "develop": "gatsby develop",
+    "format": "prettier --write \"src/components/*.js\" \"src/pages/*.js\""
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "devDependencies": {
+    "prettier": "2.0.2"
   }
 }
