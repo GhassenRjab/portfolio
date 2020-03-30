@@ -10,13 +10,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "gatsby-starter-default",
-        short_name: "starter",
+        name: "Ghassen Rjab's portfolio website",
+        short_name: "Ghassen Rjab",
         start_url: "/",
-        background_color: "#663399",
-        theme_color: "#663399",
-        display: "minimal-ui",
-        icon: "src/assets/images/website-icon.png", // This path is relative to the root of the site.
+        background_color: "#555259",
+        theme_color: "#565952",
+        display: "standalone",
+        icon: "src/assets/images/website-icon.png",
       },
     },
     "gatsby-plugin-sass",

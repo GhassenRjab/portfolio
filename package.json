@@ -1,7 +1,7 @@
 {
   "name": "ghassen-rjab-portfolio",
   "description": "Ghassen Rjab's portfolio",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "author": "Ghassen Rjab <rjab.ghassen@gmail.com>",
   "dependencies": {
     "gatsby": "^2.20.8",
@@ -24,8 +24,9 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
     "format": "prettier --write \"src/components/*.js\" \"src/pages/*.js\""
   },
   "repository": {

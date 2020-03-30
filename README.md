@@ -1,18 +1,25 @@
-# gatsby-starter-strata
+# My protfolio website
 
-**This is a starter for Gatsby.js V2.**
+[![Netlify Status](https://api.netlify.com/api/v1/badges/df232a91-e0ac-4c89-ae62-f91528fb23a3/deploy-status)](https://app.netlify.com/sites/cranky-tesla-dab923/deploys)
 
-**The older V1 version of this starter can be found on the v1 branch**
+This is my portfolio website.
 
-Gatsby starter based on the Strata site template, designed by [HTML5 UP](https://html5up.net/strata). Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
+It is based on [Gatsby starter Strata](https://www.gatsbyjs.org/starters/codebushi/gatsby-starter-strata/) which is based on the Strata site template, designed by [HTML5 UP](https://html5up.net/strata).
 
-## Preview
+## Requirements
 
-http://gatsby-strata.surge.sh/
+- Node.js: ^12.3.0
+- Yarn: ^1.22.0
 
 ## Installation
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-starter-strata https://github.com/ChangoMan/gatsby-starter-strata`
+Run `yarn` to install all dependencies.
 
-Run `gatsby develop` in the terminal to start.
+## Run in development mode
+
+Run `yarn develop` to launch the website in development mode.
+
+## Run in production mode
+
+1. Run `yarn build` in order to build the production bundle.
+2. Run `yarn serve` to launch the website in production mode.
