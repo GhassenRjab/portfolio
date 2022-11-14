@@ -4,20 +4,17 @@
   "version": "1.5.0",
   "author": "Ghassen Rjab <rjab.ghassen@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.20.24",
-    "gatsby-plugin-google-analytics": "^2.2.4",
+    "gatsby": "^5.0.1",
+    "gatsby-plugin-google-analytics": "^5.0.0",
     "gatsby-plugin-html-attributes": "^1.0.5",
-    "gatsby-plugin-manifest": "^2.3.5",
-    "gatsby-plugin-offline": "^3.1.4",
-    "gatsby-plugin-react-helmet": "^3.2.4",
-    "gatsby-plugin-robots-txt": "^1.5.0",
-    "gatsby-plugin-sass": "^2.2.3",
-    "gatsby-plugin-sitemap": "^2.3.4",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0",
-    "react-images": "1.1.0"
+    "gatsby-plugin-manifest": "^5.0.0",
+    "gatsby-plugin-offline": "^6.0.0",
+    "gatsby-plugin-robots-txt": "^1.8.0",
+    "gatsby-plugin-sass": "^6.0.0",
+    "gatsby-plugin-sitemap": "^6.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.56.1"
   },
   "keywords": [
     "gatsby"
@@ -34,6 +31,6 @@
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
   "devDependencies": {
-    "prettier": "^2.0.4"
+    "prettier": "2.7.1"
   }
 }

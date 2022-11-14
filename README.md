@@ -8,18 +8,17 @@ It is based on [Gatsby starter Strata](https://www.gatsbyjs.org/starters/codebus
 
 ## Requirements
 
-- Node.js: ^12.3.0
-- Yarn: ^1.22.0
+- Node.js: ^18.12.0
 
 ## Installation
 
-Run `yarn` to install all dependencies.
+Run `npm install` to install all dependencies.
 
 ## Run in development mode
 
-Run `yarn develop` to launch the website in development mode.
+Run `npm run develop` to launch the website in development mode.
 
 ## Run in production mode
 
-1. Run `yarn build` in order to build the production bundle.
-2. Run `yarn serve` to launch the website in production mode.
+1. Run `npm run build` in order to build the production bundle.
+2. Run `npm run serve` to launch the website in production mode.
