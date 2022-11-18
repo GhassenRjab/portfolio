@@ -1,5 +1,4 @@
 import React from "react";
-import Helmet from "react-helmet";
 
 import Layout from "../components/layout";
 import Gallery from "../components/Gallery";
@@ -12,56 +11,41 @@ import thumb05 from "../assets/images/thumbs/05.jpg";
 import thumb06 from "../assets/images/thumbs/06.jpg";
 import thumb07 from "../assets/images/thumbs/07.jpg";
 
-import full01 from "../assets/images/fulls/01.jpg";
-import full02 from "../assets/images/fulls/02.jpg";
-import full03 from "../assets/images/fulls/03.jpg";
-import full04 from "../assets/images/fulls/04.jpg";
-import full05 from "../assets/images/fulls/05.jpg";
-import full06 from "../assets/images/fulls/06.jpg";
-import full07 from "../assets/images/fulls/07.jpg";
-
 const DEFAULT_IMAGES = [
   {
-    source: full01,
     thumbnail: thumb01,
     caption: "Zoe",
     description:
       "Design, set up architecture and develop from scratch Zoe (the chatbot for Quicktext hotels) using Azure Bot Service, Cognitive Services and Node.js.",
   },
   {
-    source: full02,
     thumbnail: thumb02,
     caption: "Paristay",
     description:
       "Full-stack development of Paristay using CodeIgniter. Improve SQL queries and site response time. Develop a dashboard dedicated to yield management.",
   },
   {
-    source: full03,
     thumbnail: thumb03,
     caption: "WIKI.TOTAL",
     description: "Full-stack development of WIKI.TOTAL using CodeIgniter.",
   },
   {
-    source: full04,
     thumbnail: thumb04,
     caption: "Fondation Lenval",
     description: "Front-end development and development of Drupal modules",
   },
   {
-    source: full05,
     thumbnail: thumb05,
     caption: "Urofrance",
     description: "Front-end development and development of Drupal modules",
   },
   {
-    source: full06,
     thumbnail: thumb06,
     caption: "SmartServices",
     description:
       "Development and maintenance of SmartServices using Java EE (spring, Hibernate and JSF), a POS Web application for restaurants.",
   },
   {
-    source: full07,
     thumbnail: thumb07,
     caption: "BipSMS",
     description:
@@ -69,9 +53,9 @@ const DEFAULT_IMAGES = [
   },
 ];
 
-const HomeIndex = () => (
-  <Layout>
-    <Helmet>
+export function Head() {
+  return (
+    <>
       <title>
         Ghassen Rjab - Fullstack JavaScript Developer and problem solver
       </title>
@@ -79,8 +63,12 @@ const HomeIndex = () => (
         name="description"
         content="This is the protfolio website of Ghassen Rjab, a Fullstack JavaScript Developer from Sfax, Tunisia. Based in Paris, France now."
       />
-    </Helmet>
+    </>
+  );
+}
 
+const HomeIndex = () => (
+  <Layout>
     <div id="main">
       <section id="one">
         <header className="major">
