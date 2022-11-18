@@ -1,20 +1,10 @@
 import React from "react";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 const Footer = () => (
   <div id="footer">
     <div className="inner">
       <ul className="icons">
-        <li>
-          <OutboundLink
-            href="https://twitter.com/GhassenRjab"
-            className="icon fa-twitter"
-            title="Twitter profile"
-            aria-label="Twitter profile"
-          >
-            <span className="label">Twitter</span>
-          </OutboundLink>
-        </li>
         <li>
           <OutboundLink
             href="https://github.com/GhassenRjab"
