@@ -95,10 +95,8 @@ const HomeIndex = () => (
             <form
               name="contact"
               method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
+              action="/api/submit"
             >
-              <input type="hidden" name="bot-field" />
               <div className="row uniform 50%">
                 <div className="6u 12u$(xsmall)">
                   <input type="text" name="name" id="name" placeholder="Name" />
