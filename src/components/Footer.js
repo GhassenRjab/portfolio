@@ -1,29 +1,28 @@
 import React from "react";
-import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 const Footer = () => (
   <div id="footer">
     <div className="inner">
       <ul className="icons">
         <li>
-          <OutboundLink
+          <a
             href="https://github.com/GhassenRjab"
             className="icon fa-github"
             title="GitHub profile"
             aria-label="GitHub profile"
           >
             <span className="label">Github</span>
-          </OutboundLink>
+          </a>
         </li>
         <li>
-          <OutboundLink
+          <a
             href="https://www.linkedin.com/in/ghassenrjab/"
             className="icon fa-linkedin"
             title="LinkedIn profile"
             aria-label="LinkedIn profile"
           >
             <span className="label">LinkedIn</span>
-          </OutboundLink>
+          </a>
         </li>
         <li>
           <a
@@ -40,9 +39,9 @@ const Footer = () => (
         <li>&copy; Gatsby Starter Strata</li>
         <li>
           Design:{" "}
-          <OutboundLink href="http://html5up.net" title="HTML5 UP">
+          <a href="http://html5up.net" title="HTML5 UP">
             HTML5 UP
-          </OutboundLink>
+          </a>
         </li>
       </ul>
     </div>
