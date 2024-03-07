@@ -92,12 +92,16 @@ const HomeIndex = () => (
         <p>Want to hire me or get in touch with me? Send me a message.</p>
         <div className="row">
           <div className="12u">
-            <form
-              name="contact"
-              method="post"
-              action="/api/submit"
-            >
+            <form name="contact" method="post" action="/api/submit">
               <div className="row uniform 50%">
+                <div className="valuable">
+                  <input
+                    type="text"
+                    name="country"
+                    id="country"
+                    placeholder="Country"
+                  />
+                </div>
                 <div className="6u 12u$(xsmall)">
                   <input type="text" name="name" id="name" placeholder="Name" />
                 </div>
